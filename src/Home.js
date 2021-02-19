@@ -1,15 +1,28 @@
-import List from './List';
-import useFetch from './useFetch';
+import { useState } from "react";
+import List from "./List";
 
 const Home = () => {
-    const {data, error} = useFetch('http://localhost:8000/todoitens');
-    return (  
-        <div className="home">
-            <h2>Todo list</h2>
-            { error && <div>{ error }</div>}
-            {data && <List todoitens={data} />}
-        </div>
-    );
+  const [list, setList] = useState([
+    { value: 'Learn React', id: 1 },
+    { value: 'this is whrong', id: 2 },
+    { value: 'aaaaaaaa', id: 3 }
+  ])
+
+  const handleDelete = (id) => {
+    const newList = list.filter(list => list.id !== id);
+    setList(newList);
+  }
+
+  const handleAdd = () => {
+    const newList = list.concat();
+    setList(newList);
+  }
+
+  return (
+    <div className="home">
+      <List list={list} title="All Blogs" handleDelete={handleDelete} />
+    </div>
+  );
 }
-    
+ 
 export default Home;

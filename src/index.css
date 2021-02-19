@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-family: 'Indie Flower';
+}
+form{
+    position: relative;
+    align-items: center;
+    margin: 20px auto;
+    width: 400px;
+}
+/* paper style */
+.home{
+    position: relative;
+    margin: 40px auto;
+
+    width: 400px;
+    height: 350px;
+    background:  #feff9c;
+    border-radius: 2px;
+}
+.home::before,
+.home::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.home::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.home::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.home:hover::before,
+.home:hover::after {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.home:hover::before {
+  left: 5px;
+}
+
+.home:hover::after {
+  right: 5px;
+}
+
+p{
+    margin: 8px 8px auto;
+    text-align: center;
+}
+p:hover{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    color: #000F55;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.app:hover{
+    text-decoration: line-through;
+    cursor: pointer ;
+}
+
+.create{
+    font-family: 'Indie Flower';
+}
+
+/* estilo do botão */
+button {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #000F55;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #000F55}
+
+button:active {
+    background-color: #000F55;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input{
+    margin: 10px 10px;
+}
+input:focus{
+    outline: none;
+}
