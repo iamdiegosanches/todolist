@@ -13,6 +13,7 @@ form{
     width: 400px;
 }
 /* paper style */
+
 .home{
     position: relative;
     margin: 40px auto;
@@ -62,7 +63,6 @@ p{
     text-align: center;
 }
 p:hover{
-    text-decoration: line-through;
     cursor: pointer;
 }
 
@@ -73,44 +73,17 @@ h2{
     margin: 10px 0px;
 }
 
-.app:hover{
-    text-decoration: line-through;
-    cursor: pointer ;
+.collection{
+  text-align: center;
 }
 
-.create{
-    font-family: 'Indie Flower';
+.strike{
+  text-decoration: line-through;
 }
 
-/* estilo do botão */
-button {
-    display: inline-block;
-    margin-left: 15px;
-    padding: 10px 15px;
-    font-size: 10px;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #000F55;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-button:hover {background-color: #000F55}
-
-button:active {
-    background-color: #000F55;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-input{
+.task{
     margin: 10px 10px;
 }
-input:focus{
+.task:focus{
     outline: none;
 }
