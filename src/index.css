@@ -71,6 +71,7 @@ h2{
     color: #000F55;
     font-size: 30px;
     margin: 10px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .collection{
@@ -86,4 +87,10 @@ h2{
 }
 .task:focus{
     outline: none;
+}
+
+#root > div > div.home > div > button{
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }

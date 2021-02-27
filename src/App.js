@@ -31,7 +31,6 @@ function App() {
 
   return (
     <div>
-
       <div className="home">
         <h2>Todo's</h2>
         <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
